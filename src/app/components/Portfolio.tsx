@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from 'next/image';
 import { Navbar, NavbarBrand, NavbarCollapse, NavbarLink, NavbarToggle } from "flowbite-react";
 import Jerrod from '../assets/IMG_9129 copy 2.png'
+import Jerrod2 from '../assets/IMG_9129.jpeg'
 import { CardBody, CardContainer, CardItem } from './ui/3d-card';
 import pottymap from '../assets/pottymap.png'
 import sunnyweather from '../assets/sunnyweather.png'
@@ -40,7 +41,7 @@ const Portfolio = () => {
                 {/* Radial gradient for the container to give a faded look */}
                 {/* <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div> */}
                 <div className='grid sm:grid-cols-2 xl:grid-cols-3 items-center justify-center'>
-                    <img className='h-[400px] md:h-[500px] lg:h-[600px] pl-5 md:pl-10 mx-auto' src={Jerrod.src} alt='Jerrod' />
+                    <img className='h-[400px] md:h-[500px] lg:h-[600px] pl-5 md:pl-10 mx-auto' src={Jerrod.src} alt='A portrait of Jerrod' />
                     <div className='px-5 md:px-10 lg:px-16 xl:col-span-2'>
                         <p className="text-4xl md:text-6xl lg:text-7xl font-bold relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-neutral-300 to-neutral-500 py-8">Hi there! I’m Jerrod Packard</p>
                         <p className="text-xl md:text-3xl lg:text-4xl font-bold relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-neutral-500 to-neutral-700">A Front End Web Developer passionate about creating interactive applications and experiences on the web</p>
@@ -329,7 +330,7 @@ const Portfolio = () => {
                                 translateZ="60"
                                 className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300"
                             >
-                                Developed in React and powered by the Pokémon API, this Pokédex application empowers users to explore Pokémon from generations 1-5. Users can quickly retrieve detailed information by searching with either the Pokémon's name or ID number. Additionally, a randomizer feature generates a surprise Pokémon with a simple button click. Plus, the integration of local storage enables users to save their favorite Pokémon for easy access.
+                                Developed in React and powered by the Pokémon API, this Pokédex application empowers users to explore Pokémon from generations 1-5. Users can quickly retrieve detailed information by searching with either the Pokémon&apos;s name or ID number. Additionally, a randomizer feature generates a surprise Pokémon with a simple button click. Plus, the integration of local storage enables users to save their favorite Pokémon for easy access.
                             </CardItem>
                             <CardItem translateZ="100" className="w-full mt-4">
                                 <Image
