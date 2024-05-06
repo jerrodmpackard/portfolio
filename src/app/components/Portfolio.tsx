@@ -9,6 +9,14 @@ import pottymap from '../assets/pottymap.png'
 import sunnyweather from '../assets/sunnyweather.png'
 import pokedex from '../assets/pokedex.png'
 
+import { FaReact, FaHtml5, FaBootstrap, FaFigma, FaGithub, FaSlack } from "react-icons/fa6";
+import { IoLogoReact, IoLogoHtml5, IoLogoCss3, IoLogoJavascript, IoLogoVercel } from "react-icons/io5";
+import { SiCsharp, SiDotnet, SiTailwindcss, SiMicrosoftsqlserver, SiMicrosoftazure, SiPostman, SiJira, SiNotion } from "react-icons/si";
+import { BiLogoTypescript } from "react-icons/bi";
+import { TbBrandNextjs } from "react-icons/tb";
+import { VscCode } from "react-icons/vsc";
+import { IconContext } from "react-icons";
+
 const Portfolio = () => {
     return (
         <>
@@ -31,11 +39,185 @@ const Portfolio = () => {
             <div className="h-[50rem] w-full dark:bg-black bg-white  dark:bg-dot-white/[0.2] bg-dot-black/[0.2] relative flex items-center justify-center">
                 {/* Radial gradient for the container to give a faded look */}
                 {/* <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div> */}
-                <div className='grid sm:grid-cols-2 items-center justify-center'>
+                <div className='grid sm:grid-cols-2 xl:grid-cols-3 items-center justify-center'>
                     <img className='h-[400px] md:h-[500px] lg:h-[600px] pl-5 md:pl-10 mx-auto' src={Jerrod.src} alt='Jerrod' />
-                    <div className='sm:px-5 md:px-10'>
+                    <div className='px-5 md:px-10 lg:px-16 xl:col-span-2'>
                         <p className="text-4xl md:text-6xl lg:text-7xl font-bold relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-neutral-300 to-neutral-500 py-8">Hi there! I’m Jerrod Packard</p>
                         <p className="text-xl md:text-3xl lg:text-4xl font-bold relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-neutral-500 to-neutral-700">A Front End Web Developer passionate about creating interactive applications and experiences on the web</p>
+                    </div>
+                </div>
+            </div>
+
+            {/* Skills Section */}
+            <div className='bg-neutral-700 text-white'>
+                <h1 className='text-center text-4xl md:text-6xl lg:text-7xl font-bold py-8'>Skills</h1>
+                <div className='container mx-auto grid grid-cols-1 lg:grid-cols-2 px-10 pb-8'>
+                    <div className='grid grid-cols-2 gap-4 py-8'>
+                        <h1 className='col-span-2 text-center text-4xl font-semibold'>Tech Stack</h1>
+                        <div className='grid justify-center'>
+                            <IconContext.Provider value={{ size: '50' }}>
+                                <div>
+                                    <FaHtml5 className='mx-auto' />
+                                </div>
+                            </IconContext.Provider>
+                            <p className='text-center'>HTML</p>
+                        </div>
+                        <div className='grid justify-center'>
+                            <IconContext.Provider value={{ size: '50' }}>
+                                <div>
+                                    <IoLogoCss3 className='mx-auto' />
+                                </div>
+                            </IconContext.Provider>
+                            <p className='text-center'>CSS</p>
+                        </div>
+                        <div className='grid justify-center'>
+                            <IconContext.Provider value={{ size: '50' }}>
+                                <div>
+                                    <IoLogoJavascript className='mx-auto w-10' />
+                                </div>
+                            </IconContext.Provider>
+                            <p className='text-center'>JavaScript</p>
+                        </div>
+                        <div className='grid justify-center'>
+                            <IconContext.Provider value={{ size: '50' }}>
+                                <div>
+                                    <BiLogoTypescript className='mx-auto w-10' />
+                                </div>
+                            </IconContext.Provider>
+                            <p className='text-center'>TypeScript</p>
+                        </div>
+                        <div className='grid justify-center'>
+                            <IconContext.Provider value={{ size: '50' }}>
+                                <div>
+                                    <FaReact className='mx-auto w-10' />
+                                </div>
+                            </IconContext.Provider>
+                            <p className='text-center'>React</p>
+                        </div>
+                        <div className='grid justify-center'>
+                            <IconContext.Provider value={{ size: '50' }}>
+                                <div>
+                                    <TbBrandNextjs className='mx-auto w-10' />
+                                </div>
+                            </IconContext.Provider>
+                            <p className='text-center'>Next.js</p>
+                        </div>
+                        <div className='grid justify-center'>
+                            <IconContext.Provider value={{ size: '50' }}>
+                                <div>
+                                    <SiTailwindcss className='mx-auto w-10' />
+                                </div>
+                            </IconContext.Provider>
+                            <p className='text-center'>Tailwind</p>
+                        </div>
+                        <div className='grid justify-center'>
+                            <IconContext.Provider value={{ size: '50' }}>
+                                <div>
+                                    <FaBootstrap className='mx-auto w-10' />
+                                </div>
+                            </IconContext.Provider>
+                            <p className='text-center'>Bootstrap</p>
+                        </div>
+                        <div className='grid justify-center'>
+                            <IconContext.Provider value={{ size: '50' }}>
+                                <div>
+                                    <SiCsharp className='mx-auto w-10' />
+                                </div>
+                            </IconContext.Provider>
+                            <p className='text-center'>C#</p>
+                        </div>
+                        <div className='grid justify-center'>
+                            <IconContext.Provider value={{ size: '50' }}>
+                                <div>
+                                    <SiDotnet className='mx-auto w-10' />
+                                </div>
+                            </IconContext.Provider>
+                            <p className='text-center'>.NET</p>
+                        </div>
+                    </div>
+
+                    <div className='grid grid-cols-2 gap-4 py-8'>
+                        <h1 className='col-span-2 text-center text-4xl font-semibold'>Tools</h1>
+                        <div className='grid justify-center'>
+                            <IconContext.Provider value={{ size: '50' }}>
+                                <div>
+                                    <VscCode className='mx-auto' />
+                                </div>
+                            </IconContext.Provider>
+                            <p className='text-center'>VSCode</p>
+                        </div>
+                        <div className='grid justify-center'>
+                            <IconContext.Provider value={{ size: '50' }}>
+                                <div>
+                                    <FaGithub className='mx-auto' />
+                                </div>
+                            </IconContext.Provider>
+                            <p className='text-center'>GitHub</p>
+                        </div>
+                        <div className='grid justify-center'>
+                            <IconContext.Provider value={{ size: '50' }}>
+                                <div>
+                                    <SiMicrosoftazure className='mx-auto w-10' />
+                                </div>
+                            </IconContext.Provider>
+                            <p className='text-center'>Azure</p>
+                        </div>
+                        <div className='grid justify-center'>
+                            <IconContext.Provider value={{ size: '50' }}>
+                                <div>
+                                    <SiMicrosoftsqlserver className='mx-auto w-10' />
+                                </div>
+                            </IconContext.Provider>
+                            <p className='text-center'>SQL Server</p>
+                        </div>
+                        <div className='grid justify-center'>
+                            <IconContext.Provider value={{ size: '50' }}>
+                                <div>
+                                    <SiPostman className='mx-auto w-10' />
+                                </div>
+                            </IconContext.Provider>
+                            <p className='text-center'>Postman</p>
+                        </div>
+                        <div className='grid justify-center'>
+                            <IconContext.Provider value={{ size: '50' }}>
+                                <div>
+                                    <SiJira className='mx-auto w-10' />
+                                </div>
+                            </IconContext.Provider>
+                            <p className='text-center'>Jira</p>
+                        </div>
+                        <div className='grid justify-center'>
+                            <IconContext.Provider value={{ size: '50' }}>
+                                <div>
+                                    <FaFigma className='mx-auto w-10' />
+                                </div>
+                            </IconContext.Provider>
+                            <p className='text-center'>Figma</p>
+                        </div>
+                        <div className='grid justify-center'>
+                            <IconContext.Provider value={{ size: '50' }}>
+                                <div>
+                                    <IoLogoVercel className='mx-auto w-10' />
+                                </div>
+                            </IconContext.Provider>
+                            <p className='text-center'>Vercel</p>
+                        </div>
+                        <div className='grid justify-center'>
+                            <IconContext.Provider value={{ size: '50' }}>
+                                <div>
+                                    <FaSlack className='mx-auto w-10' />
+                                </div>
+                            </IconContext.Provider>
+                            <p className='text-center'>Slack</p>
+                        </div>
+                        <div className='grid justify-center'>
+                            <IconContext.Provider value={{ size: '50' }}>
+                                <div>
+                                    <SiNotion className='mx-auto w-10' />
+                                </div>
+                            </IconContext.Provider>
+                            <p className='text-center'>Notion</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -181,13 +363,12 @@ const Portfolio = () => {
                 </div>
             </div>
 
-            <div>
-                <h1 className='text-center text-4xl md:text-6xl lg:text-7xl font-bold py-8'>Skills</h1>
-                <div className='grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 px-5'>
-                    
-                </div>
+            {/* Skills Section */}
+            <div className='bg-neutral-700 text-white pb-4'>
+                <h1 className='text-center text-4xl md:text-6xl lg:text-7xl font-bold py-8'>Contact</h1>
+                <p className='text-center text-xl pb-4'>jpackard@codestack.co</p>
+                <p className='text-center text-xl'>(209) 565-3871</p>
             </div>
-
         </>
 
     )
