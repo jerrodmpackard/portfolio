@@ -15,7 +15,6 @@ import { IoLogoReact, IoLogoHtml5, IoLogoCss3, IoLogoJavascript, IoLogoVercel } 
 import { SiCsharp, SiDotnet, SiTailwindcss, SiMicrosoftsqlserver, SiMicrosoftazure, SiPostman, SiJira, SiNotion, SiVisualstudiocode } from "react-icons/si";
 import { BiLogoTypescript } from "react-icons/bi";
 import { TbBrandNextjs } from "react-icons/tb";
-import { VscCode } from "react-icons/vsc";
 import { IconContext } from "react-icons";
 
 const Portfolio = () => {
@@ -36,8 +35,9 @@ const Portfolio = () => {
                 </Navbar>
             </div>
 
+
             {/* Hero Header */}
-            <div className="h-[42rem] w-full dark:bg-black bg-white  dark:bg-dot-white/[0.2] bg-dot-black/[0.2] relative flex items-center justify-center">
+            <section className="h-[42rem] w-full dark:bg-black bg-white  dark:bg-dot-white/[0.2] bg-dot-black/[0.2] relative flex items-center justify-center">
                 {/* Radial gradient for the container to give a faded look */}
                 {/* <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div> */}
                 <div className='grid sm:grid-cols-2 xl:grid-cols-3 items-center justify-center'>
@@ -47,14 +47,15 @@ const Portfolio = () => {
                         <p className="text-xl md:text-3xl lg:text-4xl font-bold relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-neutral-500 to-neutral-700">A Front End Web Developer passionate about creating interactive applications and experiences on the web</p>
                     </div>
                 </div>
-            </div>
+            </section>
+
 
             {/* Skills Section */}
-            <div className='bg-neutral-700 text-white'>
-                <h1 className='text-center text-4xl md:text-6xl lg:text-7xl font-bold py-8'>Skills</h1>
+            <section className='bg-neutral-700 text-white'>
+                <h2 className='text-center text-4xl md:text-6xl lg:text-7xl font-bold py-8'>Skills</h2>
                 <div className='container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 px-10 pb-8'>
                     <div className='grid grid-cols-2 gap-4 py-8 border rounded-xl'>
-                        <h1 className='col-span-2 text-center text-4xl font-semibold'>Tech Stack</h1>
+                        <h3 className='col-span-2 text-center text-4xl font-semibold'>Tech Stack</h3>
                         <div className='grid justify-center'>
                             <IconContext.Provider value={{ size: '50' }}>
                                 <div>
@@ -138,7 +139,7 @@ const Portfolio = () => {
                     </div>
 
                     <div className='grid grid-cols-2 gap-4 py-8 border rounded-xl'>
-                        <h1 className='col-span-2 text-center text-4xl font-semibold'>Tools</h1>
+                        <h3 className='col-span-2 text-center text-4xl font-semibold'>Tools</h3>
                         <div className='grid justify-center'>
                             <IconContext.Provider value={{ size: '50' }}>
                                 <div>
@@ -221,11 +222,12 @@ const Portfolio = () => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
+
 
             {/* Projects Section */}
-            <div>
-                <h1 className='text-center text-4xl md:text-6xl lg:text-7xl font-bold py-8'>Projects</h1>
+            <section>
+                <h2 className='text-center text-4xl md:text-6xl lg:text-7xl font-bold py-8'>Projects</h2>
                 <div className='grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 px-5'>
                     <CardContainer className="inter-var">
                         <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
@@ -251,7 +253,41 @@ const Portfolio = () => {
                                     alt="thumbnail"
                                 />
                             </CardItem>
-                            <div className="flex justify-between items-center mt-20">
+                            <CardItem translateZ="60" className="w-full mt-4">
+                                <div className='grid grid-flow-col'>
+                                    <IconContext.Provider value={{ size: '50' }}>
+                                        <div>
+                                            <TbBrandNextjs className='mx-auto w-10' />
+                                        </div>
+                                    </IconContext.Provider>
+                                    <IconContext.Provider value={{ size: '50' }}>
+                                        <div>
+                                            <BiLogoTypescript className='mx-auto w-10' />
+                                        </div>
+                                    </IconContext.Provider>
+                                    <IconContext.Provider value={{ size: '50' }}>
+                                        <div>
+                                            <SiTailwindcss className='mx-auto w-10' />
+                                        </div>
+                                    </IconContext.Provider>
+                                    <IconContext.Provider value={{ size: '50' }}>
+                                        <div>
+                                            <SiCsharp className='mx-auto w-10' />
+                                        </div>
+                                    </IconContext.Provider>
+                                    <IconContext.Provider value={{ size: '50' }}>
+                                        <div>
+                                            <SiDotnet className='mx-auto w-10' />
+                                        </div>
+                                    </IconContext.Provider>
+                                    <IconContext.Provider value={{ size: '50' }}>
+                                        <div>
+                                            <SiMicrosoftsqlserver className='mx-auto w-10' />
+                                        </div>
+                                    </IconContext.Provider>
+                                </div>
+                            </CardItem>
+                            <div className="flex justify-between items-center mt-10">
                                 <CardItem
                                     translateZ={20}
                                     as={Link}
@@ -296,7 +332,26 @@ const Portfolio = () => {
                                     alt="thumbnail"
                                 />
                             </CardItem>
-                            <div className="flex justify-between items-center mt-20">
+                            <CardItem translateZ="60" className="w-full mt-4">
+                                <div className='grid grid-flow-col'>
+                                    <IconContext.Provider value={{ size: '50' }}>
+                                        <div>
+                                            <TbBrandNextjs className='mx-auto w-10' />
+                                        </div>
+                                    </IconContext.Provider>
+                                    <IconContext.Provider value={{ size: '50' }}>
+                                        <div>
+                                            <BiLogoTypescript className='mx-auto w-10' />
+                                        </div>
+                                    </IconContext.Provider>
+                                    <IconContext.Provider value={{ size: '50' }}>
+                                        <div>
+                                            <SiTailwindcss className='mx-auto w-10' />
+                                        </div>
+                                    </IconContext.Provider>
+                                </div>
+                            </CardItem>
+                            <div className="flex justify-between items-center mt-10">
                                 <CardItem
                                     translateZ={20}
                                     as={Link}
@@ -341,7 +396,26 @@ const Portfolio = () => {
                                     alt="thumbnail"
                                 />
                             </CardItem>
-                            <div className="flex justify-between items-center mt-20">
+                            <CardItem translateZ="60" className="w-full mt-4">
+                                <div className='grid grid-flow-col'>
+                                    <IconContext.Provider value={{ size: '50' }}>
+                                        <div>
+                                            <FaReact className='mx-auto w-10' />
+                                        </div>
+                                    </IconContext.Provider>
+                                    <IconContext.Provider value={{ size: '50' }}>
+                                        <div>
+                                            <BiLogoTypescript className='mx-auto w-10' />
+                                        </div>
+                                    </IconContext.Provider>
+                                    <IconContext.Provider value={{ size: '50' }}>
+                                        <div>
+                                            <SiTailwindcss className='mx-auto w-10' />
+                                        </div>
+                                    </IconContext.Provider>
+                                </div>
+                            </CardItem>
+                            <div className="flex justify-between items-center mt-10">
                                 <CardItem
                                     translateZ={20}
                                     as={Link}
@@ -362,15 +436,16 @@ const Portfolio = () => {
                         </CardBody>
                     </CardContainer>
                 </div>
-            </div>
+            </section>
+
 
             {/* Skills Section */}
-            <div className='bg-neutral-700 text-white pb-8'>
-                <h1 className='text-center text-4xl md:text-6xl lg:text-7xl font-bold py-8'>Contact</h1>
+            <section className='bg-neutral-700 text-white pb-8'>
+                <h2 className='text-center text-4xl md:text-6xl lg:text-7xl font-bold py-8'>Contact</h2>
                 <p className='text-center text-xl pb-4'>jpackard@codestack.co</p>
                 <p className='text-center text-xl pb-4'>Stockton, CA</p>
                 <p className='text-center text-xl'>(209) 565-3871</p>
-            </div>
+            </section>
         </>
 
     )
