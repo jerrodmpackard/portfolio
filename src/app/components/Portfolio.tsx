@@ -11,7 +11,7 @@ import pokedex from '../assets/pokedex.png'
 
 import { FaReact, FaHtml5, FaBootstrap, FaFigma, FaGithub, FaSlack } from "react-icons/fa6";
 import { IoLogoReact, IoLogoHtml5, IoLogoCss3, IoLogoJavascript, IoLogoVercel } from "react-icons/io5";
-import { SiCsharp, SiDotnet, SiTailwindcss, SiMicrosoftsqlserver, SiMicrosoftazure, SiPostman, SiJira, SiNotion } from "react-icons/si";
+import { SiCsharp, SiDotnet, SiTailwindcss, SiMicrosoftsqlserver, SiMicrosoftazure, SiPostman, SiJira, SiNotion, SiVisualstudiocode } from "react-icons/si";
 import { BiLogoTypescript } from "react-icons/bi";
 import { TbBrandNextjs } from "react-icons/tb";
 import { VscCode } from "react-icons/vsc";
@@ -36,7 +36,7 @@ const Portfolio = () => {
             </div>
 
             {/* Hero Header */}
-            <div className="h-[50rem] w-full dark:bg-black bg-white  dark:bg-dot-white/[0.2] bg-dot-black/[0.2] relative flex items-center justify-center">
+            <div className="h-[42rem] w-full dark:bg-black bg-white  dark:bg-dot-white/[0.2] bg-dot-black/[0.2] relative flex items-center justify-center">
                 {/* Radial gradient for the container to give a faded look */}
                 {/* <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div> */}
                 <div className='grid sm:grid-cols-2 xl:grid-cols-3 items-center justify-center'>
@@ -51,8 +51,8 @@ const Portfolio = () => {
             {/* Skills Section */}
             <div className='bg-neutral-700 text-white'>
                 <h1 className='text-center text-4xl md:text-6xl lg:text-7xl font-bold py-8'>Skills</h1>
-                <div className='container mx-auto grid grid-cols-1 lg:grid-cols-2 px-10 pb-8'>
-                    <div className='grid grid-cols-2 gap-4 py-8'>
+                <div className='container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 px-10 pb-8'>
+                    <div className='grid grid-cols-2 gap-4 py-8 border rounded-xl'>
                         <h1 className='col-span-2 text-center text-4xl font-semibold'>Tech Stack</h1>
                         <div className='grid justify-center'>
                             <IconContext.Provider value={{ size: '50' }}>
@@ -136,12 +136,12 @@ const Portfolio = () => {
                         </div>
                     </div>
 
-                    <div className='grid grid-cols-2 gap-4 py-8'>
+                    <div className='grid grid-cols-2 gap-4 py-8 border rounded-xl'>
                         <h1 className='col-span-2 text-center text-4xl font-semibold'>Tools</h1>
                         <div className='grid justify-center'>
                             <IconContext.Provider value={{ size: '50' }}>
                                 <div>
-                                    <VscCode className='mx-auto' />
+                                    <SiVisualstudiocode className='mx-auto' />
                                 </div>
                             </IconContext.Provider>
                             <p className='text-center'>VSCode</p>
@@ -232,14 +232,14 @@ const Portfolio = () => {
                                 translateZ="50"
                                 className="text-xl font-bold text-neutral-600 dark:text-white"
                             >
-                                PottyMap
+                                Potty Map
                             </CardItem>
                             <CardItem
                                 as="p"
                                 translateZ="60"
                                 className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300"
                             >
-                                A full stack application designed to help users find nearby bathrooms. Built in Next.js and C#, leveraging the Mapbox API.
+                                A comprehensive full stack application tailored to assisting users in locating nearby bathrooms. Created with Next.js and C#, it seamlessly integrates with the Mapbox API to deliver an immersive mapping experience. The interactive map dynamically showcases real-time data sourced directly from user inputs, all managed within a robust SQL Server database.
                             </CardItem>
                             <CardItem translateZ="100" className="w-full mt-4">
                                 <Image
@@ -284,7 +284,7 @@ const Portfolio = () => {
                                 translateZ="60"
                                 className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300"
                             >
-                                A weather application built in Next.js, leveraging the OpenWeatherMap API.
+                                This weather application, crafted with Next.js, harnesses the power of the OpenWeatherMap API to provide users with accurate weather information. Users have the option to either search for a city manually or utilize the geolocation feature for instant access to current and five-day weather forecasts. Additionally, seamless integration with local storage empowers users to curate a personalized favorites list of cities.
                             </CardItem>
                             <CardItem translateZ="100" className="w-full mt-4">
                                 <Image
@@ -322,14 +322,14 @@ const Portfolio = () => {
                                 translateZ="50"
                                 className="text-xl font-bold text-neutral-600 dark:text-white"
                             >
-                                Pokedex
+                                Pokédex
                             </CardItem>
                             <CardItem
                                 as="p"
                                 translateZ="60"
                                 className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300"
                             >
-                                A pokedex application built in React, leveraging the Pokemon API.
+                                Developed in React and powered by the Pokémon API, this Pokédex application empowers users to explore Pokémon from generations 1-5. Users can quickly retrieve detailed information by searching with either the Pokémon's name or ID number. Additionally, a randomizer feature generates a surprise Pokémon with a simple button click. Plus, the integration of local storage enables users to save their favorite Pokémon for easy access.
                             </CardItem>
                             <CardItem translateZ="100" className="w-full mt-4">
                                 <Image
@@ -364,9 +364,10 @@ const Portfolio = () => {
             </div>
 
             {/* Skills Section */}
-            <div className='bg-neutral-700 text-white pb-4'>
+            <div className='bg-neutral-700 text-white pb-8'>
                 <h1 className='text-center text-4xl md:text-6xl lg:text-7xl font-bold py-8'>Contact</h1>
                 <p className='text-center text-xl pb-4'>jpackard@codestack.co</p>
+                <p className='text-center text-xl pb-4'>Stockton, CA</p>
                 <p className='text-center text-xl'>(209) 565-3871</p>
             </div>
         </>
