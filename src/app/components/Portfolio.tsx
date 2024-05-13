@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from 'next/image';
 import { Navbar, NavbarBrand, NavbarCollapse, NavbarLink, NavbarToggle } from "flowbite-react";
 import Jerrod from '../assets/IMG_9129 copy 2.png'
-import Jerrod2 from '../assets/IMG_9129.jpeg'
+import Jerrod2 from '../assets/ProfilePhoto2.webp'
 import { CardBody, CardContainer, CardItem } from './ui/3d-card';
 import pottymap from '../assets/pottymap.png'
 import sunnyweather from '../assets/sunnyweather.png'
@@ -40,9 +40,9 @@ const Portfolio = () => {
             <section className="h-[42rem] w-full dark:bg-black bg-white  dark:bg-dot-white/[0.2] bg-dot-black/[0.2] relative flex items-center justify-center">
                 {/* Radial gradient for the container to give a faded look */}
                 {/* <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div> */}
-                <div className='grid sm:grid-cols-2 xl:grid-cols-3 items-center justify-center'>
-                    <img className='h-[400px] md:h-[500px] lg:h-[600px] pl-5 md:pl-10 mx-auto' src={Jerrod.src} alt='A portrait of Jerrod' />
-                    <div className='px-5 md:px-10 lg:px-16 xl:col-span-2'>
+                <div className='grid sm:grid-cols-2 lg:grid-cols-3 items-center justify-center'>
+                    <Image height={400} className='px-5 mx-auto' src={Jerrod2} alt='A portrait of Jerrod' />
+                    <div className='px-5 md:px-10 lg:px-16 lg:col-span-2'>
                         <p className="text-4xl md:text-6xl lg:text-7xl font-bold relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-neutral-300 to-neutral-500 py-8">Hi there! I’m Jerrod Packard</p>
                         <p className="text-xl md:text-3xl lg:text-4xl font-bold relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-neutral-500 to-neutral-700">A Front End Web Developer passionate about creating interactive applications and experiences on the web</p>
                     </div>
